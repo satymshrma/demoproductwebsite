@@ -1,3 +1,7 @@
 node_modules
 Dockerfile
 docs
+.gitignore
+.dockerignore
+compose.yaml
+.vscode
