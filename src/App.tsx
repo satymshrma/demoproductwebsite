@@ -1,13 +1,43 @@
+import CustomerReviews from "./sections/CustomerReviews";
+import Footer from "./sections/Footer";
+import PopularProducts from "./sections/PopularProducts";
+import Services from "./sections/Services";
+import SpecialOffers from "./sections/SpecialOffers";
+import Subscribe from "./sections/Subscribe";
+import SuperQuality from "./sections/SuperQuality";
+
 function App() {
   return (
     <>
       <main
         onContextMenu={(e) => e.preventDefault()}
-        className="p-1 flex-col bg-black text-white h-svh select-none font-mono"
+        className="relative select-none"
       >
-        <h1 className="sticky text-center top-0 font-extrabold text-3xl">
-          Hello Vite + React!
-        </h1>
+        Nav
+        <section className="xl:padding-1 wide:padding-r padding-b">
+          Hero
+        </section>
+        <section className="padding">
+          <PopularProducts />
+        </section>
+        <section className="padding">
+          <SuperQuality />
+        </section>
+        <section className="padding-x py-10">
+          <Services />
+        </section>
+        <section className="padding">
+          <SpecialOffers />
+        </section>
+        <section className="padding bg-pale-blue">
+          <CustomerReviews />
+        </section>
+        <section className="padding-x sm:py-32 py-16 w-full">
+          <Subscribe />
+        </section>
+        <section className="bg-black text-white padding-x padding-t pb-8">
+          <Footer />
+        </section>
       </main>
     </>
   );
