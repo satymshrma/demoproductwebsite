@@ -1,10 +1,15 @@
-import CustomerReviews from "./sections/CustomerReviews";
-import Footer from "./sections/Footer";
-import PopularProducts from "./sections/PopularProducts";
-import Services from "./sections/Services";
-import SpecialOffers from "./sections/SpecialOffers";
-import Subscribe from "./sections/Subscribe";
-import SuperQuality from "./sections/SuperQuality";
+import {
+  CustomerReviews,
+  Footer,
+  Hero,
+  PopularProducts,
+  Services,
+  SpecialOffers,
+  Subscribe,
+  SuperQuality,
+} from "./sections";
+
+import Nav from "./components/Nav";
 
 function App() {
   return (
@@ -13,9 +18,9 @@ function App() {
         onContextMenu={(e) => e.preventDefault()}
         className="relative select-none"
       >
-        Nav
-        <section className="xl:padding-1 wide:padding-r padding-b">
-          Hero
+        <Nav />
+        <section className="xl:padding-l wide:padding-r padding-b">
+          <Hero />
         </section>
         <section className="padding">
           <PopularProducts />
